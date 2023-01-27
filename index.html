@@ -33,7 +33,11 @@
 <body>
   <h1 class="text"> Hello, I am Ömer Özdemir.</h1>
 
-
+<script>
+fetch('http://example.com/movies.json')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+   </script>
 </body>
 
 </html>
