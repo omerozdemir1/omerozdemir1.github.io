@@ -22,8 +22,11 @@
       font-size:4.5em;
       letter-spacing:-3px;
       line-height:110%;
-      text-align: center;
+      
       transition:all .2s ease-in-out
+    }
+    div{
+      text-align: center;
     }
 
   </style>
@@ -31,12 +34,16 @@
 </head>
 
 <body>
+  <div>
   <h1 class="text"> Hello, I am Ömer Özdemir.</h1>
+  <img id="img" src="">
+  </div>
 
 <script>
 const getUserGitHubAPI  = async () => {
     const APIResponse = await fetch('https://api.github.com/users/juliolimacostavalladares');
     const gitHubUser = await APIResponse.json();
+    document.getElementById("img").src= gitHubUser.avatar_url;
     console.log(gitHubUser.avatar_url);
 }
 getUserGitHubAPI()
