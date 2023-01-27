@@ -1,0 +1,23 @@
+     body{
+     font-family:Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+      background:#111;
+      overscroll-behavior:none;
+      overflow-x:hidden
+    }
+
+    h1{
+      
+      background:linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      font-family:sans-serif;
+      font-weight: bold;
+      font-size:4.5em;
+      letter-spacing:-3px;
+      line-height:110%;
+      transition:all .2s ease-in-out
+	
+    }
+    div{
+      text-align: center;
+    }
